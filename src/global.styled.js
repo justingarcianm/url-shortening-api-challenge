@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
         --red:hsl(0, 87%, 67%);
         --gray:hsl(0, 0%, 75%);
         --gray-violet:hsl(257, 7%, 63%);
+        --light-gray:hsl(231, 28%, 95%);
         --very-dark-blue:hsl(255, 11%, 22%);
         --very-dark-violet:hsl(260, 8%, 14%);
     }
@@ -20,24 +21,30 @@ const GlobalStyle = createGlobalStyle`
     *,
     *:before,
     *:after {
-        box-size:border-box;
+        box-sizing:border-box;
         padding:0;
         margin:0;
     }
 
     body {
         font-family: 'Poppins', sans-serif;
+        overflow-x:hidden;
+    }
+
+    section {
+        position:relative;
+        padding:4rem 0;
     }
 
     h1 {
-        font-size:4rem;
+        font-size:6rem;
         font-weight:700;
         color:var(--very-dark-violet);
     }
 
     h2 {
         font-size:2.5rem;
-        font-weight:500;
+        font-weight:700;
         color:var(--very-dark-violet);
     }
 
@@ -50,14 +57,25 @@ const GlobalStyle = createGlobalStyle`
     p,
     p a {
         font-size:18px;
-        line-height: 20px;
+        line-height: 28px;
         font-weight:400;
+        margin:1rem 0;
     }
 
     a {
-        font-weight:500;
+        font-weight:700;
         font-size:16px;
         transition: all ease 300ms;
+        color:inherit;
+        text-decoration:none;
+    }
+    img {
+        max-width:100%;
+    }
+
+    .logo {
+        width:fit-content;
+        height:min-content;
     }
 
 `
@@ -68,11 +86,12 @@ export const mobileBreak = `(max-width:900px)`
 
 export const Button = styled(motion.a)`
     background-color:var(--blue);
-    padding:.5 1rem;
-    border-radius:50%;
+    padding:.625rem 1.825rem;
+    border-radius:25px;
+    color:#fff;
 
     &:hover,
-    &:targeted,
+    &:target,
     &:focus {
         background-color:var(--light-blue);
     }
