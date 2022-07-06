@@ -39,7 +39,7 @@ export const CardWrapper = styled(motion.article)`
     background-color:#fff;
     padding:4rem 2rem 2rem;
     border-radius:10px;
-    align-self:${props => props.alignCard};
+    align-self:${props => props.aligncard};
     z-index:2;
     position:relative;
 

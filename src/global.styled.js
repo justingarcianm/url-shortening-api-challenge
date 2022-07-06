@@ -4,8 +4,6 @@ import { motion } from "framer-motion";
 
 const GlobalStyle = createGlobalStyle`
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-
     :root {
         --blue:hsl(180, 66%, 49%);
         --light-blue:hsl(179, 56%, 75%);

@@ -1,7 +1,7 @@
 import { CardWrapper } from "./Stats.styled"
 
 const Card = ({content}) => {
-    return <CardWrapper alignCard={content.align}>
+    return <CardWrapper aligncard={content.align}>
         <div className="img-wrapper">
             <img src={content.image} alt={content.title} />
         </div>

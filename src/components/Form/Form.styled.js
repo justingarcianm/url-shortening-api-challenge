@@ -48,5 +48,22 @@ export const InnerFormWrapper = styled.form`
         background:var(--blue);
         font-weight:700;
         padding:1rem 2rem;
+        cursor:pointer;
+        transition: all ease 300ms;
+
+        &:hover {
+            background-color:var(--light-blue);
+        }
     }
+`
+
+export const ShortenedWrapper = styled(motion.div)`
+    margin:1rem 0;
+    padding: 1rem;
+    background-color:#fff;
+    color:var(-dark-violet);
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 `

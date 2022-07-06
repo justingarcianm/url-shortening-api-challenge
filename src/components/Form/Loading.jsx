@@ -2,7 +2,7 @@ import { FormWrapper, LoadingWrapper } from "./Form.styled"
 
 const Loading = ({background}) => {
     return <FormWrapper background={background}>
-        Loading
+        <h3>Fetching Link..</h3>
     </FormWrapper>
 }
 
